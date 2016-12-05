@@ -23,9 +23,6 @@ class ViewController: UIViewController { //definition of a class, ViewController
         }
         userIsInTheMiddleOfTyping = true
     }
-
-
 }
 //inside curly brackets are all properties and methods
-
 //example = print("touched \(digit) digit") //if something is a constant and never changes, uses let instead of var
