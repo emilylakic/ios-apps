@@ -1,3 +1,4 @@
+//
 //  ViewController.swift
 //  Calculator
 //
@@ -22,6 +23,16 @@ class ViewController: UIViewController { //definition of a class, ViewController
         }
         userIsInTheMiddleOfTyping = true
     }
+
+    @IBAction func performOperation(_ sender: UIButton) {
+        userIsInTheMiddleOfTyping = false
+        if let mathematicalSymbol = sender.currentTitle {
+            if mathematicalSymbol == "π" {
+                display.text = String(M_PI) //Converts Double to String
+            }
+        }
+    }
 }
 //inside curly brackets are all properties and methods
+
 //example = print("touched \(digit) digit") //if something is a constant and never changes, uses let instead of var
